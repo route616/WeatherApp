@@ -24,7 +24,7 @@ class NetworkManager {
 
     private func buildURL() -> String {
         return urlBase + "/onecall?lat=" + latitude + "&lon=" + longitude + "&appid=" + urlAPIKey +
-               "&exclude=minutely&units=metric&lang=ru"
+               "&exclude=minutely,hourly&units=metric&lang=ru"
     }
 
     func fetchWeather(
