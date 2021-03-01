@@ -15,5 +15,4 @@ import UIKit
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var humidityLabel: UILabel!
     @IBOutlet weak var pressureLabel: UILabel!
-
 }
