@@ -43,12 +43,10 @@
 	<true/>
 	<key>UILaunchScreen</key>
 	<dict>
-		<key>UIImageRespectsSafeAreaInsets</key>
-		<true/>
 		<key>UIColorName</key>
-		<string>backgroundColor</string>
+		<string>launchScreenBackgroundColor</string>
 		<key>UIImageName</key>
-		<string>launchLogo</string>
+		<string>launchScreenLogo</string>
 	</dict>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
@@ -65,8 +63,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
