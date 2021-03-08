@@ -145,6 +145,7 @@
                     </view>
                     <connections>
                         <outlet property="detailForecastView" destination="ecf-5E-9Wi" id="yiW-MA-Z8o"/>
+                        <outlet property="hourlyForecastView" destination="hOl-XL-Taj" id="Kic-nn-njz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CeF-JE-x5i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

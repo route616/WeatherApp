@@ -8,6 +8,9 @@
 import UIKit
 
 @IBDesignable final class HourlyForecastView: UIView {
+    // MARK: - Outlets
+    @IBOutlet weak var hourlyForecastTableView: UITableView!
+
     // MARK: - Initialization
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,6 +27,10 @@ import UIKit
         guard let view = loadFromNib(nibName: "HourlyForecastView") else { return }
         view.frame = self.bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        hourlyForecastTableView.register(
+            UINib(nibName: "HourlyTemperatureTableViewCell", bundle: nil),
+            forCellReuseIdentifier: "hourlyTemperatureCell"
+        )
         addSubview(view)
     }
 }

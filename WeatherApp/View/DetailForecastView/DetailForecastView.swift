@@ -13,8 +13,6 @@ import UIKit
     @IBOutlet weak var highTemperatureLabel: UILabel!
     @IBOutlet weak var conditionTableView: UITableView!
 
-    private let conditionCellID = "conditionCell"
-
     // MARK: - Initialization
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -33,7 +31,7 @@ import UIKit
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         conditionTableView.register(
             UINib(nibName: "ConditionTableViewCell", bundle: nil),
-            forCellReuseIdentifier: conditionCellID
+            forCellReuseIdentifier: "conditionCell"
         )
         addSubview(view)
     }
