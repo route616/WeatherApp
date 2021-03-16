@@ -196,7 +196,9 @@ extension WeatherViewController: UITableViewDataSource {
             let dailyWeatherIcon = weatherData.daily[indexPath.row].weather.last?.icon ?? ""
 
             let dateFormatter = DateFormatter()
-            let currentDay = Date(timeIntervalSince1970: TimeInterval(weatherData.daily[indexPath.row].dt))
+            let currentDay = Date(
+                timeIntervalSince1970: TimeInterval(weatherData.daily[indexPath.row].dt)
+            )
 
             dateFormatter.dateFormat = "EEEE"
 
