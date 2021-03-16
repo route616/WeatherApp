@@ -23,10 +23,10 @@
                                         <rect key="frame" x="8" y="8" width="327" height="140"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Lp7-SZ-7r6">
-                                                <rect key="frame" x="0.0" y="0.0" width="189" height="140"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="179" height="140"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="F15-N2-dQV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="189" height="72"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="72"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="RIGHT NOW" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOS-vb-wfU">
                                                                 <rect key="frame" x="0.0" y="0.0" width="87" height="24"/>
@@ -34,8 +34,8 @@
                                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20℃" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbd-io-aYT">
-                                                                <rect key="frame" x="0.0" y="24" width="101.33333333333333" height="48"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--℃" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbd-io-aYT">
+                                                                <rect key="frame" x="0.0" y="24" width="85" height="48"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -46,7 +46,7 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Vsh-mu-N7K">
-                                                        <rect key="frame" x="0.0" y="80" width="189" height="60"/>
+                                                        <rect key="frame" x="0.0" y="80" width="179" height="60"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FEELS LIKE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeR-S0-6VC">
                                                                 <rect key="frame" x="0.0" y="0.0" width="80.666666666666671" height="18"/>
@@ -54,8 +54,8 @@
                                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24℃" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zu-77-wy0">
-                                                                <rect key="frame" x="0.0" y="18" width="88.333333333333329" height="42"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--℃" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zu-77-wy0">
+                                                                <rect key="frame" x="0.0" y="18" width="74.666666666666671" height="42"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -67,12 +67,13 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="☀️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Rn-Z5-e10">
-                                                <rect key="frame" x="197" y="0.0" width="130" height="140"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="120"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hLd-GX-GaX">
+                                                <rect key="frame" x="187" y="0.0" width="140" height="140"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="140" id="NqL-6g-4nP"/>
+                                                    <constraint firstAttribute="width" constant="140" id="jpL-nR-TwT"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="140" id="RAw-wl-DhA"/>
@@ -103,6 +104,12 @@
                                         <real key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="OTa-tB-hEj" id="YOu-75-WAu"/>
+                                    <outlet property="feelsLikeLabel" destination="2zu-77-wy0" id="wa7-mq-U4X"/>
+                                    <outlet property="temperatureLabel" destination="hbd-io-aYT" id="cK5-vh-9fg"/>
+                                    <outlet property="weatherIconImage" destination="hLd-GX-GaX" id="npH-c2-Qdv"/>
+                                </connections>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="t0a-NS-NMY">
                                 <rect key="frame" x="16" y="250" width="343" height="32"/>
@@ -114,12 +121,19 @@
                                     <segment title="Hourly"/>
                                     <segment title="Daily"/>
                                 </segments>
+                                <connections>
+                                    <action selector="bottomViewChanged:" destination="LGn-fx-ac3" eventType="valueChanged" id="cKY-FG-Jqm"/>
+                                </connections>
                             </segmentedControl>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecf-5E-9Wi" customClass="DetailForecastView" customModule="WeatherApp" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecf-5E-9Wi" customClass="DetailForecastView" customModule="WeatherApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="297" width="375" height="481"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOl-XL-Taj" customClass="HourlyForecastView" customModule="WeatherApp" customModuleProvider="target">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hOl-XL-Taj" customClass="HourlyForecastView" customModule="WeatherApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="297" width="375" height="481"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZ3-3m-SH1" customClass="DailyForecastView" customModule="WeatherApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="297" width="375" height="481"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -128,11 +142,15 @@
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="qAz-Xd-H5g" firstAttribute="trailing" secondItem="ecf-5E-9Wi" secondAttribute="trailing" id="6Yd-77-TXc"/>
+                            <constraint firstItem="qAz-Xd-H5g" firstAttribute="bottom" secondItem="AZ3-3m-SH1" secondAttribute="bottom" id="9tP-AC-lOc"/>
                             <constraint firstItem="hOl-XL-Taj" firstAttribute="trailing" secondItem="qAz-Xd-H5g" secondAttribute="trailing" id="Bye-GL-law"/>
+                            <constraint firstItem="AZ3-3m-SH1" firstAttribute="leading" secondItem="qAz-Xd-H5g" secondAttribute="leading" id="Fm0-ad-5cS"/>
+                            <constraint firstItem="AZ3-3m-SH1" firstAttribute="top" secondItem="t0a-NS-NMY" secondAttribute="bottom" constant="16" id="GJj-tc-ldE"/>
                             <constraint firstItem="2FW-VD-ofu" firstAttribute="top" secondItem="qAz-Xd-H5g" secondAttribute="top" constant="8" id="Ju2-Ep-gXV"/>
                             <constraint firstItem="hOl-XL-Taj" firstAttribute="top" secondItem="t0a-NS-NMY" secondAttribute="bottom" constant="16" id="QvI-pU-498"/>
                             <constraint firstItem="2FW-VD-ofu" firstAttribute="leading" secondItem="qAz-Xd-H5g" secondAttribute="leading" constant="16" id="YEJ-Qd-svQ"/>
                             <constraint firstItem="t0a-NS-NMY" firstAttribute="top" secondItem="2FW-VD-ofu" secondAttribute="bottom" constant="16" id="daF-EH-XWl"/>
+                            <constraint firstItem="qAz-Xd-H5g" firstAttribute="trailing" secondItem="AZ3-3m-SH1" secondAttribute="trailing" id="dnQ-6K-gjS"/>
                             <constraint firstItem="ecf-5E-9Wi" firstAttribute="leading" secondItem="qAz-Xd-H5g" secondAttribute="leading" id="iqY-ab-ngI"/>
                             <constraint firstItem="ecf-5E-9Wi" firstAttribute="top" secondItem="t0a-NS-NMY" secondAttribute="bottom" constant="16" id="jnG-yh-2iE"/>
                             <constraint firstItem="hOl-XL-Taj" firstAttribute="leading" secondItem="qAz-Xd-H5g" secondAttribute="leading" id="nMV-mx-vg8"/>
@@ -144,6 +162,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="currentBottomViewControl" destination="t0a-NS-NMY" id="6sr-U7-EnC"/>
+                        <outlet property="currentWeatherView" destination="2FW-VD-ofu" id="eod-ij-gLj"/>
+                        <outlet property="dailyForecastView" destination="AZ3-3m-SH1" id="eyI-Lp-8nR"/>
                         <outlet property="detailForecastView" destination="ecf-5E-9Wi" id="yiW-MA-Z8o"/>
                         <outlet property="hourlyForecastView" destination="hOl-XL-Taj" id="Kic-nn-njz"/>
                     </connections>

@@ -11,7 +11,7 @@ import UIKit
     // MARK: - Outlets
     @IBOutlet weak var lowTemperatureLabel: UILabel!
     @IBOutlet weak var highTemperatureLabel: UILabel!
-    @IBOutlet weak var conditionTableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
 
     // MARK: - Initialization
     override init(frame: CGRect) {
@@ -29,7 +29,7 @@ import UIKit
         guard let view = loadFromNib(nibName: "DetailForecastView") else { return }
         view.frame = self.bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        conditionTableView.register(
+        tableView.register(
             UINib(nibName: "ConditionTableViewCell", bundle: nil),
             forCellReuseIdentifier: "conditionCell"
         )

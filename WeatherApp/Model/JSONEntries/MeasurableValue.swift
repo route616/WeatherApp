@@ -6,5 +6,5 @@
 //
 
 struct MeasurableValue: Codable {
-    let lh: Double
+    let lh: Double?
 }

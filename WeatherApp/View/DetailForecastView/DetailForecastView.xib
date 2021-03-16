@@ -10,9 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailForecastView" customModule="WeatherApp" customModuleProvider="target">
             <connections>
-                <outlet property="conditionTableView" destination="p0X-fq-NOy" id="sha-yq-pN2"/>
-                <outlet property="highTemperatureLabel" destination="m8D-ew-NbK" id="2Ez-JF-XZr"/>
+                <outlet property="highTemperatureLabel" destination="bQY-b9-FhX" id="vq9-gy-dMO"/>
                 <outlet property="lowTemperatureLabel" destination="nCm-Bs-AHc" id="Cia-AT-CMr"/>
+                <outlet property="tableView" destination="p0X-fq-NOy" id="gga-pF-eQB"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -24,16 +24,16 @@
                     <rect key="frame" x="0.0" y="8" width="414" height="66"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="luv-bp-S0T">
-                            <rect key="frame" x="0.0" y="0.0" width="201.5" height="66"/>
+                            <rect key="frame" x="0.0" y="0.0" width="207" height="66"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15℃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCm-Bs-AHc">
-                                    <rect key="frame" x="0.0" y="0.0" width="201.5" height="48"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--℃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCm-Bs-AHc">
+                                    <rect key="frame" x="0.0" y="0.0" width="207" height="48"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQn-6H-QJX">
-                                    <rect key="frame" x="0.0" y="48" width="201.5" height="18"/>
+                                    <rect key="frame" x="0.0" y="48" width="207" height="18"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                     <nil key="highlightedColor"/>
@@ -41,15 +41,15 @@
                             </subviews>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oip-Nd-MDO">
-                            <rect key="frame" x="201.5" y="0.0" width="212.5" height="66"/>
+                            <rect key="frame" x="207" y="0.0" width="207" height="66"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23℃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQY-b9-FhX">
-                                    <rect key="frame" x="0.0" y="0.0" width="212.5" height="48"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--℃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQY-b9-FhX">
+                                    <rect key="frame" x="0.0" y="0.0" width="207" height="48"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8D-ew-NbK">
-                                    <rect key="frame" x="0.0" y="48" width="212.5" height="18"/>
+                                    <rect key="frame" x="0.0" y="48" width="207" height="18"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>

@@ -3,8 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,43 +20,52 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kis-c9-RTg">
                         <rect key="frame" x="16" y="12" width="50" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="50" id="M2B-Dj-W0D"/>
+                            <constraint firstAttribute="width" constant="50" id="j7Z-h3-VTW"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="m3A-Bd-cDN">
-                        <rect key="frame" x="74" y="20" width="230" height="5"/>
-                        <color key="progressTintColor" systemColor="secondaryLabelColor"/>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="m3A-Bd-cDN">
+                        <rect key="frame" x="74" y="20" width="191" height="4"/>
+                        <color key="progressTintColor" name="AccentColor"/>
                         <color key="trackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </progressView>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWc-Qo-lT6" customClass="ThumbTemperatureView" customModule="WeatherApp" customModuleProvider="target">
-                        <rect key="frame" x="165" y="9" width="54" height="24"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18º" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbe-h9-MBl">
+                        <rect key="frame" x="273" y="12" width="32" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="PoA-9d-C6U"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="m3A-Bd-cDN" secondAttribute="trailing" constant="16" id="Cns-yE-pUw"/>
-                    <constraint firstItem="m3A-Bd-cDN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" symbolic="YES" id="EUB-LD-LcF"/>
-                    <constraint firstItem="Kis-c9-RTg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="IJy-Tb-nds"/>
-                    <constraint firstAttribute="bottom" secondItem="m3A-Bd-cDN" secondAttribute="bottom" constant="20" symbolic="YES" id="fiR-ZI-OjG"/>
-                    <constraint firstItem="Kis-c9-RTg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="j9M-ZI-FBC"/>
-                    <constraint firstAttribute="bottom" secondItem="Kis-c9-RTg" secondAttribute="bottom" constant="11" id="ugg-qG-apk"/>
-                    <constraint firstItem="m3A-Bd-cDN" firstAttribute="leading" secondItem="Kis-c9-RTg" secondAttribute="trailing" constant="8" symbolic="YES" id="v0b-hI-Ubr"/>
+                    <constraint firstItem="Fbe-h9-MBl" firstAttribute="leading" secondItem="m3A-Bd-cDN" secondAttribute="trailing" constant="8" symbolic="YES" id="10W-VQ-2OU"/>
+                    <constraint firstAttribute="trailing" secondItem="Fbe-h9-MBl" secondAttribute="trailing" constant="15" id="1AV-sC-bHC"/>
+                    <constraint firstAttribute="bottom" secondItem="m3A-Bd-cDN" secondAttribute="bottom" constant="20" symbolic="YES" id="27a-SL-sXr"/>
+                    <constraint firstItem="Kis-c9-RTg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="4yS-za-0Jh"/>
+                    <constraint firstItem="Fbe-h9-MBl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="FvT-6U-P3I"/>
+                    <constraint firstItem="m3A-Bd-cDN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" symbolic="YES" id="QKl-Jh-rXi"/>
+                    <constraint firstAttribute="bottom" secondItem="Fbe-h9-MBl" secondAttribute="bottom" constant="11" id="exN-Qh-AuO"/>
+                    <constraint firstItem="m3A-Bd-cDN" firstAttribute="leading" secondItem="Kis-c9-RTg" secondAttribute="trailing" constant="8" symbolic="YES" id="hYh-W3-VsP"/>
+                    <constraint firstAttribute="bottom" secondItem="Kis-c9-RTg" secondAttribute="bottom" constant="11" id="rnh-W2-KrV"/>
+                    <constraint firstItem="Kis-c9-RTg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="zam-cS-pXE"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="hourLabel" destination="Kis-c9-RTg" id="sv6-yY-bjw"/>
+                <outlet property="temperatureLabel" destination="Fbe-h9-MBl" id="Jf1-WH-IaW"/>
+                <outlet property="temperatureProgressView" destination="m3A-Bd-cDN" id="m3K-SD-Zrf"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

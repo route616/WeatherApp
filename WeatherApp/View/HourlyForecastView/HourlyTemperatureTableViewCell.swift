@@ -9,6 +9,6 @@ import UIKit
 
 @IBDesignable final class HourlyTemperatureTableViewCell: UITableViewCell {
     @IBOutlet weak var hourLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
     @IBOutlet weak var temperatureProgressView: UIProgressView!
-    @IBOutlet weak var thumbTemperatureView: ThumbTemperatureView!
 }

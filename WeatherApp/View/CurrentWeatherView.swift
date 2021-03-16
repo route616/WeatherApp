@@ -8,6 +8,12 @@
 import UIKit
 
 @IBDesignable class CurrentWeatherView: UIView {
+    // MARK: - Outlets
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var feelsLikeLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var weatherIconImage: UIImageView!
+
     // MARK: - Inspectable properties
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {

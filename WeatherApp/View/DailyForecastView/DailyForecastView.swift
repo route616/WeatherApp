@@ -1,5 +1,5 @@
 //
-//  HourlyForecastView.swift
+//  DailyForecastView.swift
 //  WeatherApp
 //
 //  Created by Игорь on 02.03.2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-@IBDesignable final class HourlyForecastView: UIView {
+@IBDesignable class DailyForecastView: UIView {
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
 
@@ -24,12 +24,12 @@ import UIKit
 
     // MARK: - configure()
     private func configureView() {
-        guard let view = loadFromNib(nibName: "HourlyForecastView") else { return }
+        guard let view = loadFromNib(nibName: "DailyForecastView") else { return }
         view.frame = self.bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         tableView.register(
-            UINib(nibName: "HourlyTemperatureTableViewCell", bundle: nil),
-            forCellReuseIdentifier: "hourlyTemperatureCell"
+            UINib(nibName: "DailyTemperatureTableViewCell", bundle: nil),
+            forCellReuseIdentifier: "dailyTemperatureCell"
         )
         addSubview(view)
     }
